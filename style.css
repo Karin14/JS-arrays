@@ -1,0 +1,54 @@
+body {
+  margin: 20px;
+}
+
+.inputs {
+  padding: 10px 20px;
+  background: -webkit-gradient(linear, left top, right bottom, from(#33ccff), to(#ff99cc));
+  background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+  width: 50%;
+  margin-bottom: 20px;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 2px;
+}
+
+.inputs input, .inputs textarea {
+  display: block;
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 5px;
+}
+
+.buttons button {
+  margin-right: 12px;
+  padding: 5px 10px;
+  font-weight: bold;
+  color: white;
+  background: -webkit-gradient(linear, left top, right top, from(#33ccff), color-stop(purple), to(#ff99cc));
+  background: linear-gradient(90deg, #33ccff, purple, #ff99cc);
+  background-size: 300%;
+  background-position: left;
+  -webkit-transition: background-position 350ms;
+  transition: background-position 350ms;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-position: right;
+}
+
+.buttons button:last-of-type {
+  background-position: right;
+}
+
+.buttons button:last-of-type:hover {
+  background-position: left;
+}
+
+#list-of-movies {
+  width: 50%;
+}
+/*# sourceMappingURL=style.css.map */

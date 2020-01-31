@@ -1,0 +1,52 @@
+$boxShadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+body {
+    margin:20px;
+}
+
+.inputs {
+    padding:10px 20px;
+    background: linear-gradient(to bottom right, #33ccff 0%, #ff99cc 100%);
+    width:50%;
+    margin-bottom: 20px;
+    box-shadow: $boxShadow;
+    border-radius: 2px;
+
+    input, textarea {
+        display: block;
+        margin-bottom: 15px;
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+.buttons {
+    button {
+        margin-right: 12px;
+        padding:5px 10px;
+        font-weight: bold;
+        color:white;
+        background: linear-gradient(90deg, #33ccff, purple, #ff99cc);
+        background-size: 300%;
+        background-position: left;
+        transition: background-position 350ms;
+        border:none;
+        border-radius: 2px;
+        cursor: pointer;
+
+        &:hover {
+            background-position: right;
+        }
+        &:last-of-type{
+            background-position: right;
+
+            &:hover {
+                background-position: left;
+            }
+        }
+    }
+}
+
+#list-of-movies {
+    width: 50%;
+}
